@@ -9,6 +9,27 @@ class Application < Sinatra::Base
   end
 
   get '/' do
-    "Hello World"
+    return "Hello World"
+  end
+
+  get '/hello' do
+    name = params[:name]
+    return "Hello #{name}"
+  end
+
+  post '/submit' do
+    name = params[:name]
+    return "Thanks #{name}, you sent this message: 'Hello world'"
+  end
+
+  get '/names' do
+    names = params[:names]
+    return "#{names}"
+  end
+
+  post '/sort-names' do
+    names = params[:names]
+    names_sorted = names.split(",").sort.join(",")
+    return names_sorted
   end
 end
