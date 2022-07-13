@@ -31,15 +31,24 @@ When query param `name` is `Ev`
 
 ```html
 <!-- Response when the post is found: 200 OK -->
-
-Hello Ev
+<html>
+  <head></head>
+  <body>
+    <h1>Hello Ev!</h1>
+  </body>
+</html>
 ```
 When query param `name` is `Steve`
 
 ```html
 <!-- Response when the post is found: 200 OK -->
 
-Hello Steve
+<html>
+  <head></head>
+  <body>
+    <h1>Hello Steve!</h1>
+  </body>
+</html>
 ```
 
 ## 3. Write Examples
@@ -47,24 +56,34 @@ Hello Steve
 _Replace these with your own design._
 
 ```
-# Request:
+# 1 Request:
 
 GET /hello?name=Ev
 
 # Expected response:
 
-Hello Ev
+<html>
+  <head></head>
+  <body>
+    <h1>Hello Ev!</h1>
+  </body>
+</html>
 
 ```
 
 ```
-# Request:
+# 2 Request:
 
 GET /hello?name=Steve
 
 # Expected response:
 
-Hello Steve
+<html>
+  <head></head>
+  <body>
+    <h1>Hello Steve!</h1>
+  </body>
+</html>
 
 ```
 
@@ -85,13 +104,13 @@ describe Application do
     it "should return 'Hello Ev'" do
       response = get('/hello?name=Ev')
       expect(response.status).to eq 200
-      expect(response.body).to eq "Hello Ev"
+      expect(response.body).to include("<h1>Hello Ev!</h1>")
     end
 
     it "should return 'Hello Steve'" do
       response = get('/hello?name=Steve')
       expect(response.status).to eq 200
-      expect(response.body).to eq "Hello Steve"
+      expect(response.body).to include("<h1>Hello Steve!</h1>"_
     end
   end
 end

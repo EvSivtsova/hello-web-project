@@ -18,13 +18,13 @@ describe Application do
     it "should return 'Hello Ev'" do
       response = get('/hello?name=Ev')
       expect(response.status).to eq 200
-      expect(response.body).to eq "Hello Ev"
+      expect(response.body).to include("<h1>Hello Ev!</h1>")
     end
 
     it "should return 'Hello Steve'" do
       response = get('/hello?name=Steve')
       expect(response.status).to eq 200
-      expect(response.body).to eq "Hello Steve"
+      expect(response.body).to include("<h1>Hello Steve!</h1>")
     end
   end
 
