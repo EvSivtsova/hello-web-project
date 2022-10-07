@@ -3,7 +3,7 @@
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/EvSivtsova/bank_tech_test">
 </div>
 <div>
-  <img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white"/> 
+  <img src="https://img.shields.io/badge/Sinatra-black?style=for-the-badge&logo=Sinatra&logoColor=white" alt="Sinatra"/>
   <img src="https://img.shields.io/badge/RSpec-blue?style=for-the-badge&logo=Rspec&logoColor=white" alt="Rspec"/>
   <img src="https://img.shields.io/badge/Test_coverage:_100-blue?style=for-the-badge&logo=Rspec&logoColor=white" alt="Rspec"/>
 </div><br>
@@ -24,11 +24,11 @@ Technologies used:
 * Rack-test (2.0)
 * Simplecov(Test Coverage)
 
-To install the project, clone the repository and run `bundle install` to install the dependencies within the folder:
+Clone the repository and run `bundle install` to install the dependencies within the folder:
 
 ```
-git clone https://github.com/EvSivtsova/hello_web_project.git
-cd hello_web_project
+git clone https://github.com/EvSivtsova/hello-web-project.git
+cd hello-web-project
 bundle install
 ```
 
@@ -38,4 +38,4 @@ To run the tests:
 rspec
 ```
 
-
+<img src='https://github.com/EvSivtsova/hello-web-project/blob/main/outputs/hello-project-test-coverage.png'>
