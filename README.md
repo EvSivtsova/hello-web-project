@@ -1,6 +1,6 @@
 # Hello world   
 <div align="left">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/EvSivtsova/bank_tech_test">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/EvSivtsova/hello-web-project">
 </div>
 <div>
   <img src="https://img.shields.io/badge/Sinatra-black?style=for-the-badge&logo=Sinatra&logoColor=white" alt="Sinatra"/>
